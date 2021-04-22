@@ -8,6 +8,7 @@
     "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.0",
     "next": "latest",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"

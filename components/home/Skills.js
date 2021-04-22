@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <div>
+    <div className="mt-14">
       <h3>My skills</h3>
       <div>
         <h4>Figma</h4>
