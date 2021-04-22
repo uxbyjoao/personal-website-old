@@ -13,6 +13,13 @@
     "react-dom": "^16.13.1"
   },
   "license": "MIT",
-  "keywords": ["next"],
-  "description": "A \"Hello World\" application with multiple pages that shows how Next.js routing works."
+  "keywords": [
+    "next"
+  ],
+  "description": "A \"Hello World\" application with multiple pages that shows how Next.js routing works.",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.12",
+    "tailwindcss": "^2.1.1"
+  }
 }

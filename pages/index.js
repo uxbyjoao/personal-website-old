@@ -7,6 +7,7 @@ import About from "../components/home/About";
 export default function IndexPage() {
   return (
     <div>
+      <button>test button</button>
       <Hero />
       <Skills />
       <Education />
