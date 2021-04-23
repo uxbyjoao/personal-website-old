@@ -21,6 +21,7 @@ module.exports = {
   variants: {
     extend: {
       typography: ["dark"],
+      grayscale: ["hover"],
     },
   },
   plugins: [require("@tailwindcss/typography")],

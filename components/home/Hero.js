@@ -14,7 +14,7 @@ export default function Hero() {
             layout="fill"
           />
         </div>
-        <h1 className="text-3xl md:text-5xl lg:text-6xl 2xl:text-9xl dark:text-white font-extrabold tracking-tight transition-colors">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl 2xl:text-8xl dark:text-white font-extrabold tracking-tight transition-colors">
           Hello world, my name is João.
         </h1>
         <h2 className="text-xl md:text-2xl lg:text-3xl 2xl:text-5xl mt-3 text-gray-400 tracking-tight transition-colors">
@@ -23,8 +23,9 @@ export default function Hero() {
       </div>
       <div className="mt-6">
         <p className="md:text-lg lg:text-2xl dark:text-gray-100 transition-colors">
-          You can check out some samples of my work on <a href="#">Behance</a>,{" "}
-          <a href="#">Dribble</a>, and <a href="#">GitHub</a> profiles.
+          You can check out some samples of my work on my{" "}
+          <a href="#">Behance</a>, <a href="#">Dribble</a>, and{" "}
+          <a href="#">GitHub</a> profiles.
         </p>
       </div>
       <div className="mt-6">

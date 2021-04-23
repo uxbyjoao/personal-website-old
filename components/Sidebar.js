@@ -7,7 +7,7 @@ export default function Sidebar() {
         <Image
           src="/images/profile.jpg"
           alt="João's profile picture"
-          className="rounded-xl filter grayscale"
+          className="rounded-xl filter grayscale hover:grayscale-0 transition-all"
           layout="fill"
           objectFit="cover"
         />
