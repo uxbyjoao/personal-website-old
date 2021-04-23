@@ -32,15 +32,15 @@ export default function IndexPage() {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <div className="grid grid-cols-12 gap-4 mb-24">
-        <div className="col-start-3 col-span-3 mt-20">
-          <div className="sticky top-12">
+      <div className="grid grid-cols-12 gap-4 pb-24">
+        <div className="md:col-start-2 md:col-span-3 lg:col-start-3 lg:col-span-3 mt-28">
+          <aside className="sticky top-12 flex justify-center">
             <Sidebar />
-          </div>
+          </aside>
         </div>
-        <div className="col-start-6 col-span-5 mt-20">
+        <div className="md:col-start-5 md:col-span-7 lg:col-start-6 lg:col-span-5 mt-28">
           <Hero />
-          <div className="prose">
+          <div className="prose max-w-none lg:prose-2xl">
             <Skills />
             <Education />
             <Experience />

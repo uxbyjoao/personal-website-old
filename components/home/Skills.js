@@ -40,7 +40,7 @@ export default function Skills() {
           code, and have coded static sites and application prototypes. I know
           my way around React, Vue.js, Firebase, and will even risk dabbling
           with the back-end using Node when I'm feeling daring. This website,
-          for example, was developed using Next.js.
+          for example, was developed using Next.js and TailwindCSS.
         </p>
       </div>
       <div>
