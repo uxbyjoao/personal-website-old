@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Sidebar() {
   return (
-    <div>
-      <div className="relative 2xl:w-80 2xl:h-80 xl:w-60 xl:h-60 lg:w-48 lg:h-48 md:w-28 md:h-28">
+    <aside className="bg-gray-50 dark:bg-gray-900 md:bg-transparent md:dark:bg-transparent transition-colors">
+      <div className="hidden md:block relative w-8 h-8 2xl:w-80 2xl:h-80 xl:w-60 xl:h-60 lg:w-48 lg:h-48 md:w-28 md:h-28">
         <Image
           src="/images/profile.jpg"
           alt="João's profile picture"
@@ -12,13 +12,13 @@ export default function Sidebar() {
           objectFit="cover"
         />
       </div>
-      <div className="flex flex-col space-y-2 mt-8 text-lg xl:text-2xl 2xl:text-3xl dark:text-gray-200 font-medium tracking-tight">
+      <div className="flex space-x-3 px-5 py-5 text-xs md:flex-col md:justify-start md:px-0 md:py-0 md:space-y-2 md:space-x-0 md:mt-8 md:text-lg xl:text-2xl 2xl:text-3xl dark:text-gray-200 font-medium tracking-tight">
         <p>Skills</p>
         <p>Education</p>
         <p>Work Experience</p>
         <p>About</p>
       </div>
-      <div className="flex space-x-10 mt-8">
+      <div className="hidden md:flex space-x-10 mt-8">
         <Image
           src="/images/tabler-icon-brand-twitter.svg"
           width={24}
@@ -45,6 +45,6 @@ export default function Sidebar() {
           height={24}
         />
       </div>
-    </div>
+    </aside>
   );
 }
