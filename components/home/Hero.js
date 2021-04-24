@@ -1,6 +1,14 @@
 import Image from "next/image";
 
-import Button from "../Button";
+import SocialLinks from "../SocialLinks";
+
+function HeroLink({ href, alt, children }) {
+  return (
+    <a href={href} alt={alt}>
+      {children}
+    </a>
+  );
+}
 
 export default function Hero() {
   return (
@@ -24,12 +32,13 @@ export default function Hero() {
       <div className="mt-6">
         <p className="md:text-lg lg:text-2xl dark:text-gray-100 transition-colors">
           You can check out some samples of my work on my{" "}
-          <a href="#">Behance</a>, <a href="#">Dribble</a>, and{" "}
-          <a href="#">GitHub</a> profiles.
+          <HeroLink href="#">Behance</HeroLink>,{" "}
+          <HeroLink href="#">Dribble</HeroLink>, and{" "}
+          <HeroLink href="#">GitHub</HeroLink> profiles.
         </p>
       </div>
-      <div className="mt-6">
-        <Button>Send message</Button>
+      <div className="flex md:hidden space-x-2 mt-8 text-indigo-500">
+        <SocialLinks />
       </div>
     </div>
   );
