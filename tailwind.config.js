@@ -4,6 +4,11 @@ module.exports = {
   theme: {
     extend: {
       typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            color: theme("colors.gray.500")
+          }
+        },
         dark: {
           css: {
             color: theme("colors.gray.400"),
