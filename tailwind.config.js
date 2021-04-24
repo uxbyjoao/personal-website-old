@@ -7,6 +7,9 @@ module.exports = {
         dark: {
           css: {
             color: theme("colors.gray.400"),
+            strong: {
+              color: "white",
+            },
             h3: {
               color: "white",
             },
