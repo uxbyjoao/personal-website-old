@@ -11,7 +11,8 @@
     "@tailwindcss/typography": "^0.4.0",
     "next": "latest",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-scroll": "^1.8.2"
   },
   "license": "MIT",
   "keywords": [

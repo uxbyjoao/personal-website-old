@@ -1,8 +1,10 @@
+import { Element as ScrollElement } from "react-scroll";
+
 export default function Education() {
   return (
-    <div>
+    <ScrollElement name="education">
       <h3>My education</h3>
       <div>aaa</div>
-    </div>
+    </ScrollElement>
   );
 }

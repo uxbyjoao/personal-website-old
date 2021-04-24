@@ -1,4 +1,21 @@
+import { Link as ScrollLink } from "react-scroll";
+
 import Image from "next/image";
+
+const SidebarLink = ({ to, children }) => {
+  return (
+    <ScrollLink
+      to={to}
+      spy={true}
+      smooth={true}
+      offset={-20}
+      activeClass="text-indigo-500"
+      className="transition-colors cursor-pointer hover:text-indigo-500"
+    >
+      {children}
+    </ScrollLink>
+  );
+};
 
 export default function Sidebar() {
   return (
@@ -13,10 +30,10 @@ export default function Sidebar() {
         />
       </div>
       <div className="flex space-x-3 px-5 py-5 text-xs md:flex-col md:justify-start md:px-0 md:py-0 md:space-y-2 md:space-x-0 md:mt-8 md:text-lg xl:text-2xl 2xl:text-3xl dark:text-gray-200 font-medium tracking-tight">
-        <p>Skills</p>
-        <p>Education</p>
-        <p>Work Experience</p>
-        <p>About</p>
+        <SidebarLink to="skills">Skills</SidebarLink>
+        <SidebarLink to="education">Education</SidebarLink>
+        <SidebarLink to="experience">Work Experience</SidebarLink>
+        <SidebarLink to="about">About</SidebarLink>
       </div>
       <div className="hidden md:flex space-x-10 mt-8">
         <Image

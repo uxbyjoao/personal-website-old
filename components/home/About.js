@@ -1,6 +1,8 @@
+import { Element as ScrollElement } from "react-scroll";
+
 export default function About() {
   return (
-    <div>
+    <ScrollElement name="about">
       <h3>About me</h3>
       <p>
         I was born in <strong>Brazil</strong>, have a{" "}
@@ -35,6 +37,6 @@ export default function About() {
         and I am astounded by the impact that personal computing has, and
         continues to have, on our world.
       </p>
-    </div>
+    </ScrollElement>
   );
 }

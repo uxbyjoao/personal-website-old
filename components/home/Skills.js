@@ -1,6 +1,8 @@
+import { Element as ScrollElement } from "react-scroll";
+
 export default function Skills() {
   return (
-    <div className="mt-14">
+    <ScrollElement name="skills" className="mt-14">
       <h3>My skills</h3>
       <div>
         <h4>Figma</h4>
@@ -51,6 +53,6 @@ export default function Skills() {
           develop simple projects, at a very basic level.
         </p>
       </div>
-    </div>
+    </ScrollElement>
   );
 }
