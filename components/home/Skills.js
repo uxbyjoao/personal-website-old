@@ -3,11 +3,11 @@ import { Element as ScrollElement } from "react-scroll";
 import Heading from "../Heading";
 import Prose from "../Prose";
 
-import SkillIconAdobe from "../../public/images/skill-icon-adobe.svg";
-import SkillIconArduino from "../../public/images/skill-icon-arduino.svg";
-import SkillIconFigma from "../../public/images/skill-icon-figma.svg";
-import SkillIconFramer from "../../public/images/skill-icon-framer.svg";
-import SkillIconWeb from "../../public/images/skill-icon-web.svg";
+import SkillIconAdobe from "../../public/images/skill-adobe.svg";
+// import SkillIconArduino from "../../public/images/skill-icon-arduino.svg";
+import SkillIconFigma from "../../public/images/skill-figma.svg";
+import SkillIconFramer from "../../public/images/skill-framer.svg";
+import SkillIconWeb from "../../public/images/skill-web.svg";
 
 function IconHeading({ icon, children }) {
   return (
@@ -65,9 +65,7 @@ export default function Skills() {
         </Prose>
       </SkillContainer>
       <SkillContainer>
-        <IconHeading icon={<SkillIconWeb />}>
-          Front-End Development (HTML/CSS, ES6 JavaScript)
-        </IconHeading>
+        <IconHeading icon={<SkillIconWeb />}>Front-End Development</IconHeading>
         <Prose>
           <p>
             Around 2017, I took the leap and started to teach myself actual
@@ -82,7 +80,7 @@ export default function Skills() {
         </Prose>
       </SkillContainer>
       <SkillContainer>
-        <IconHeading icon={<SkillIconArduino />}>Arduino</IconHeading>
+        {/* <IconHeading icon={<SkillIconArduino />}>Arduino</IconHeading> */}
         <Prose>
           One of the things I'm most interested in is the Internet of Things,
           and as such, I have taught myself how to use the Arduino platform to
