@@ -1,9 +1,11 @@
 import { Element as ScrollElement } from "react-scroll";
 
+import Heading from "../Heading";
+
 export default function Experience() {
   return (
-    <ScrollElement name="experience">
-      <h3>Past work experience</h3>
+    <ScrollElement name="experience" className="pt-24">
+      <Heading>Past Work Experience</Heading>
       <p>todo</p>
     </ScrollElement>
   );

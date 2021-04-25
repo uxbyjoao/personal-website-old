@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Icon from "./Icon";
 
 const SocialIcon = (props) => (
@@ -13,9 +15,13 @@ export default function SocialLinks() {
     ["LinkedIn", "https://www.linkedin.com/in/jlfgms"],
   ];
 
-  return links.map(([name, href]) => (
-    <a href={href} alt={name} className="flex-grow-0">
-      <SocialIcon name={name} size={24} />
-    </a>
-  ));
+  return (
+    <>
+      {links.map(([name, href], key) => (
+        <a href={href} alt={name} className="flex-grow-0" key={key}>
+          <SocialIcon name={name} size={24} />
+        </a>
+      ))}
+    </>
+  );
 }
