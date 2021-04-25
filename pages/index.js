@@ -9,6 +9,8 @@ import Education from "../components/home/Education";
 import Experience from "../components/home/Experience";
 import About from "../components/home/About";
 
+import FlagBrazil from "../public/images/flag-brazil.svg";
+
 export default function IndexPage() {
   return (
     <>
