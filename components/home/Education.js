@@ -2,43 +2,46 @@ import { Element as ScrollElement } from "react-scroll";
 
 import Heading from "../Heading";
 
-function InstitutionNameWithFlag({ country, children }) {
-  return (
-    <div className="flex items-center space-x-2">
-      <img src={`/images/flag-${country}.svg`} alt={`${country} flag`} />
-      <p className="text-sm font-medium text-gray-600 dark:text-white transition-colors">
-        {children}
-      </p>
-    </div>
-  );
-}
+const educationList = [
+  {
+    title: "M. Sc. Usability Engineering",
+    institution: "Hochschule Rhein-Waal",
+    year: "2021",
+    flag: "germany",
+    pending: true,
+  },
+  {
+    title: "B. A. Communication Sciences",
+    institution: "Universidade de Fortaleza (UNIFOR)",
+    year: "2016",
+    flag: "brazil",
+    pending: false,
+  },
+];
 
-function InstitutionHeading({ children }) {
-  return (
+const EducationItem = ({ entry }) => (
+  <div>
     <h4 className="mb-1 text-gray-900 dark:text-gray-50 font-bold text-4xl xl:text-5xl">
-      {children}
+      {entry.title}
     </h4>
-  );
-}
+    <div className="flex items-center space-x-3">
+      <img src={`/images/flag-${entry.flag}.svg`} alt={`${entry.flag} flag`} />
+      <span className="text-sm text-gray-500">{entry.year}</span>
+      <span className="text-sm font-medium text-gray-600 dark:text-white transition-colors">
+        {entry.institution}
+      </span>
+    </div>
+  </div>
+);
 
 export default function Education() {
   return (
     <ScrollElement name="education" className="pt-24">
       <Heading>My Education</Heading>
-      <div>
-        <InstitutionHeading>M. Sc. Usability Engineering</InstitutionHeading>
-        <InstitutionNameWithFlag country="germany">
-          2021 &#8213; Hochschule Rhein-Waal
-          <span className="ml-4 font-normal italic text-gray-400">
-            Pending Thesis
-          </span>
-        </InstitutionNameWithFlag>
-      </div>
-      <div className="mt-6">
-        <InstitutionHeading>B. A. Communication Science</InstitutionHeading>
-        <InstitutionNameWithFlag country="brazil">
-          2016 &#8213; Universidade de Fortaleza (UNIFOR)
-        </InstitutionNameWithFlag>
+      <div className="grid grid-flow-row gap-14">
+        {educationList.map((entry, key) => (
+          <EducationItem entry={entry} key={key} />
+        ))}
       </div>
     </ScrollElement>
   );

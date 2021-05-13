@@ -96,20 +96,22 @@ const experienceList = [
 
 const ExperienceItem = ({ entry }) => (
   <div className="text-gray-700 dark:text-white transition-colors">
-    <div className="flex items-center space-x-3 text-sm dark:text-gray-500 italic">
+    <div className="flex items-center mb-1 space-x-3 text-sm text-gray-400 italic">
       <span>
         {entry.date.start} ― {entry.date.end}
       </span>
       <span>•</span>
       <span>{entry.type}</span>
     </div>
-    <h4 className="text-3xl font-bold">{entry.title}</h4>
-    <h5 className="text-xl">{entry.organization}</h5>
-    <div className="flex items-center space-x-2 mt-1">
+    <div className="mb-3">
+      <h4 className="text-4xl mb-1 font-bold text-gray-900">{entry.title}</h4>
+      <h5 className="text-xl">{entry.organization}</h5>
+    </div>
+    <div className="flex items-center space-x-3 mt-1">
       <img src={`/images/flag-${entry.location.flag}.svg`} />
-      <span>{entry.location.full}</span>
+      <span className="text-sm text-gray-700">{entry.location.full}</span>
       {entry.location.remote && (
-        <span className="text-xs dark:bg-gray-800 dark:text-gray-400 px-2 py-1 rounded font-medium">
+        <span className="text-xs bg-gray-200 text-gray-500 dark:bg-gray-800 dark:text-gray-400 px-2 py-1 rounded font-medium">
           Remote
         </span>
       )}
@@ -124,7 +126,7 @@ export default function Experience() {
   return (
     <ScrollElement name="experience" className="pt-24">
       <Heading>Past Work Experience</Heading>
-      <div className="space-y-12">
+      <div className="grid grid-flow-row gap-20">
         {experienceList.map((entry, key) => (
           <ExperienceItem className="bg-red-500" entry={entry} key={key} />
         ))}
