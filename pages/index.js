@@ -25,7 +25,7 @@ export default function IndexPage() {
         />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:url" content="https://uxbyjoao.me/" />
         <meta
           property="og:title"
           content="UX Designer & Usability Engineer | João Gomes"
@@ -37,7 +37,7 @@ export default function IndexPage() {
         <meta property="og:image" content="/images/social-mast.png" />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:url" content="https://uxbyjoao.me/" />
         <meta
           property="twitter:title"
           content="UX Designer & Usability Engineer | João Gomes"
