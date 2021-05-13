@@ -3,16 +3,10 @@ import { Element as ScrollElement } from "react-scroll";
 import Heading from "../Heading";
 import Prose from "../Prose";
 
-import SkillIconAdobe from "../../public/images/skill-adobe.svg";
-// import SkillIconArduino from "../../public/images/skill-icon-arduino.svg";
-import SkillIconFigma from "../../public/images/skill-figma.svg";
-import SkillIconFramer from "../../public/images/skill-framer.svg";
-import SkillIconWeb from "../../public/images/skill-web.svg";
-
-function IconHeading({ icon, children }) {
+function IconHeading({ skill, children }) {
   return (
     <div className="flex items-center space-x-2 mb-5">
-      {icon}
+      <img src={`/images/skill-${skill}.svg`} alt={`${skill} logo`} />
       <h4 className="text-xl xl:text-2xl font-semibold text-gray-700 dark:text-white transition-colors">
         {children}
       </h4>
@@ -29,7 +23,7 @@ export default function Skills() {
     <ScrollElement name="skills" className="pt-24">
       <Heading>My Skills</Heading>
       <SkillContainer first>
-        <IconHeading icon={<SkillIconFigma />}>Figma</IconHeading>
+        <IconHeading skill="figma">Figma</IconHeading>
         <Prose>
           <p>
             Figma is my main tool and I have been using it since 2018. It has
@@ -40,9 +34,7 @@ export default function Skills() {
         </Prose>
       </SkillContainer>
       <SkillContainer>
-        <IconHeading icon={<SkillIconAdobe />}>
-          Adobe Creative Suite
-        </IconHeading>
+        <IconHeading skill="adobe">Adobe Creative Suite</IconHeading>
         <Prose>
           <p>
             My background is in graphic design - hence, I am highly proficient
@@ -54,7 +46,7 @@ export default function Skills() {
         </Prose>
       </SkillContainer>
       <SkillContainer>
-        <IconHeading icon={<SkillIconFramer />}>Framer</IconHeading>
+        <IconHeading skill="framer">Framer</IconHeading>
         <Prose>
           <p>
             Framer is a tool that I've been learning in order to create higher
@@ -65,7 +57,7 @@ export default function Skills() {
         </Prose>
       </SkillContainer>
       <SkillContainer>
-        <IconHeading icon={<SkillIconWeb />}>Front-End Development</IconHeading>
+        <IconHeading skill="web">Front-End Development</IconHeading>
         <Prose>
           <p>
             Around 2017, I took the leap and started to teach myself actual
@@ -80,7 +72,7 @@ export default function Skills() {
         </Prose>
       </SkillContainer>
       <SkillContainer>
-        {/* <IconHeading icon={<SkillIconArduino />}>Arduino</IconHeading> */}
+        <IconHeading skill="arduino">Arduino</IconHeading>
         <Prose>
           One of the things I'm most interested in is the Internet of Things,
           and as such, I have taught myself how to use the Arduino platform to

@@ -42,7 +42,7 @@ export default function IndexPage() {
         <div className="px-5 pt-20 md:px-0 md:pt-0 md:col-start-5 md:col-span-7 lg:col-start-6 lg:col-span-5 md:mt-28">
           <Hero />
           <div>
-            <Projects />
+            {/* <Projects /> */}
             <Skills />
             <Education />
             <Experience />

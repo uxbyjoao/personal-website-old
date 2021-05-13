@@ -31,8 +31,8 @@ export default function Sidebar() {
           objectFit="cover"
         />
       </div>
-      <div className="flex justify-around px-5 py-5 text-xs md:flex-col md:justify-start md:px-0 md:py-0 md:space-y-2 xl:space-y-3 2xl:space-y-4 md:space-x-0 md:mt-8 md:text-2xl xl:text-4xl 2xl:text-5xl dark:text-gray-200 font-medium tracking-tight">
-        <SidebarLink to="projects">Projects</SidebarLink>
+      <div className="flex justify-around px-5 py-5 text-xs md:flex-col md:justify-start md:px-0 md:py-0 md:space-y-2 xl:space-y-2 md:space-x-0 md:mt-8 md:text-2xl xl:text-4xl dark:text-gray-200 font-medium tracking-tight">
+        {/* <SidebarLink to="projects">Projects</SidebarLink> */}
         <SidebarLink to="skills" offset={24}>
           Skills
         </SidebarLink>

@@ -5,7 +5,7 @@ import Heading from "../Heading";
 function InstitutionNameWithFlag({ country, children }) {
   return (
     <div className="flex items-center space-x-2">
-      <img src={`/images/flag-${country}.svg`} />
+      <img src={`/images/flag-${country}.svg`} alt={`${country} flag`} />
       <p className="text-sm font-medium text-gray-600 dark:text-white transition-colors">
         {children}
       </p>
