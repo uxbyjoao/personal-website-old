@@ -14,7 +14,39 @@ export default function IndexPage() {
   return (
     <>
       <Head>
-        <title>UX Designer &amp; Usability Engineer | João Gomes</title>
+        <title>UX Designer & Usability Engineer | João Gomes</title>
+        <meta
+          name="title"
+          content="UX Designer & Usability Engineer | João Gomes"
+        />
+        <meta
+          name="description"
+          content="M. Sc. Usability Engineering, born in Brazil, based in Germany."
+        />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta
+          property="og:title"
+          content="UX Designer & Usability Engineer | João Gomes"
+        />
+        <meta
+          property="og:description"
+          content="M. Sc. Usability Engineering, born in Brazil, based in Germany."
+        />
+        <meta property="og:image" content="/images/social-mast.png" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta
+          property="twitter:title"
+          content="UX Designer & Usability Engineer | João Gomes"
+        />
+        <meta
+          property="twitter:description"
+          content="M. Sc. Usability Engineering, born in Brazil, based in Germany."
+        />
+        <meta property="twitter:image" content="/images/social-mast.png" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
