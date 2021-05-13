@@ -21,7 +21,7 @@ const experienceList = [
       "At NE2, I'm tasked with designing software applications for brokering energy products, both for the web and mobile platforms. I am also responsible for the creation and maintenance of their design system. This means making sure that the NE2 brand is consistent across every touchpoint, from legal documents to software experiences.",
   },
   {
-    title: "UX/UI Designer, Web Developer",
+    title: "UX/UI Designer, Graphic Designer, Web Developer",
     organization: "Freelance",
     type: "Part-Time",
     location: {
@@ -33,6 +33,8 @@ const experienceList = [
       start: "2014",
       end: "2019",
     },
+    description:
+      "During this time, I mainly focused on finishing my degree, studying web development and preparing for coming to Germany. As a freelancer, I had the opportunity of working for some amazing clients such as the Dragão do Mar Cultural Center in Fortaleza, Arte Produções, the Mapar Group, and iClub, designing and developing websites, applications and print media.",
   },
   {
     title: "Web & Graphic Designer",
@@ -63,6 +65,8 @@ const experienceList = [
       start: "2012",
       end: "2012",
     },
+    description:
+      "I worked for Reimagine only for a few months, and was eventually recruited by Convertte. There, I was mostly responsible for designing print ads for their various clients.",
   },
   {
     title: "Art Director",
@@ -77,6 +81,8 @@ const experienceList = [
       start: "2008",
       end: "2008",
     },
+    description:
+      "This was a 3-month contract I signed with Paz for creating for Patrícia Saboya's campaign for mayor of Fortaleza, Brazil. I was responsible for myriad designs ranging from print to TV ads, as well as a hotsite designed and developed by me using WordPress. This was my first ever professional foray into web design.",
   },
   {
     title: "Art Director",
@@ -91,12 +97,14 @@ const experienceList = [
       start: "2007",
       end: "2008",
     },
+    description:
+      "During my internship, I was able to hone my skills with Adobe's suite of applications, as well as creative skills in general. I had the opportunity of designing print ads for magazines and newspapers, as well as branding for myriad clients in Fortaleza.",
   },
 ];
 
 const ExperienceItem = ({ entry }) => (
   <div className="text-gray-700 dark:text-white transition-colors">
-    <div className="flex items-center mb-1 space-x-3 text-sm text-gray-400 italic">
+    <div className="flex items-center space-x-3 text-sm text-gray-400 italic">
       <span>
         {entry.date.start} ― {entry.date.end}
       </span>
