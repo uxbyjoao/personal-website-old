@@ -38,7 +38,8 @@ export default function Hero() {
           You can check out some samples of my work on my{" "}
           <HeroLink href="https://www.behance.net/uxbyjoao">Behance</HeroLink>,{" "}
           <HeroLink href="https://www.dribbble.com/uxbyjoao">Dribbble</HeroLink>
-          , and <HeroLink href="#">GitHub</HeroLink> profiles.
+          , and <HeroLink href="https://github.com/uxbyjoao">GitHub</HeroLink>{" "}
+          profiles.
         </p>
       </div>
       <div className="inline-flex md:hidden space-x-2 mt-8 text-indigo-500">

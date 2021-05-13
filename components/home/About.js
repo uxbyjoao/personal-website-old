@@ -33,7 +33,7 @@ export default function About() {
         <p>
           In my spare time, I like to sing, record and play music (fun fact: I
           was also a professional musician from 2010 to 2017), play games on my
-          computer, and code. I also enjoy photography and traveling.
+          computer, and code. I also enjoy photography and travelling.
         </p>
         <p>
           I am fascinated by technology and how transformative it has been in
