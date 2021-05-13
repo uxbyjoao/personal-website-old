@@ -26,7 +26,9 @@ const EducationItem = ({ entry }) => (
     </h4>
     <div className="flex items-center space-x-3">
       <img src={`/images/flag-${entry.flag}.svg`} alt={`${entry.flag} flag`} />
-      <span className="text-sm text-gray-500">{entry.year}</span>
+      <span className="text-sm text-gray-500 dark:text-gray-400">
+        {entry.year}
+      </span>
       <span className="text-sm font-medium text-gray-600 dark:text-white transition-colors">
         {entry.institution}
       </span>

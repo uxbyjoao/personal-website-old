@@ -1,27 +1,56 @@
-import Image from "next/image";
+// import Icon from "./Icon";
 
-import Icon from "./Icon";
+import {
+  FaBehanceSquare,
+  FaTwitterSquare,
+  FaInstagramSquare,
+  FaDribbbleSquare,
+  FaLinkedin,
+} from "react-icons/fa";
 
 const links = [
-  ["Twitter", "https://www.twitter.com/uxbyjoao/"],
-  ["Instagram", "https://www.instagram.com/uxbyjoao"],
-  ["Behance", "https://www.behance.net/uxbyjoao"],
-  ["Dribbble", "https://www.dribbble.com/uxbyjoao"],
-  ["LinkedIn", "https://www.linkedin.com/in/jlfgms"],
+  {
+    component: FaTwitterSquare,
+    href: "https://www.twitter.com/uxbyjoao/",
+    alt: "Twitter",
+  },
+  {
+    component: FaInstagramSquare,
+    href: "https://www.instagram.com/uxbyjoao",
+    alt: "Instagram",
+  },
+  {
+    component: FaBehanceSquare,
+    href: "https://www.behance.net/uxbyjoao",
+    alt: "Behance",
+  },
+  {
+    component: FaDribbbleSquare,
+    href: "https://www.dribbble.com/uxbyjoao",
+    alt: "Dribbble",
+  },
+  {
+    component: FaLinkedin,
+    href: "https://www.linkedin.com/in/jlfgms",
+    alt: "LinkedIn",
+  },
 ];
 
-const SocialIcon = (props) => (
-  <Icon {...props} className="hover:text-indigo-400 cursor-pointer" />
+const SocialLink = ({ component, href, alt }) => (
+  <a href={href} alt={alt} target="_blank" rel="noopener noreferrer">
+    {component({
+      className:
+        "w-9 h-9 md:w-6 md:h-6 lg:w-8 lg:h-8 xl:w-9 xl:h-9 hover:text-indigo-400 cursor-pointer",
+    })}
+  </a>
 );
 
 export default function SocialLinks() {
   return (
-    <>
-      {links.map(([name, href], key) => (
-        <a href={href} alt={name} key={key}>
-          <SocialIcon name={name} size={24} />
-        </a>
+    <div className="flex space-x-1">
+      {links.map((props, key) => (
+        <SocialLink {...props} key={key} />
       ))}
-    </>
+    </div>
   );
 }

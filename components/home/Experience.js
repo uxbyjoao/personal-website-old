@@ -14,7 +14,7 @@ const experienceList = [
       flag: "canada",
     },
     date: {
-      start: "Sep 2019",
+      start: "2019",
       end: "Present",
     },
     description:
@@ -112,12 +112,18 @@ const ExperienceItem = ({ entry }) => (
       <span>{entry.type}</span>
     </div>
     <div className="mb-3">
-      <h4 className="text-4xl mb-1 font-bold text-gray-900">{entry.title}</h4>
-      <h5 className="text-xl">{entry.organization}</h5>
+      <h4 className="text-4xl mb-1 font-bold text-gray-900 dark:text-white">
+        {entry.title}
+      </h4>
+      <h5 className="text-xl text-gray-400 dark:text-gray-300">
+        {entry.organization}
+      </h5>
     </div>
-    <div className="flex items-center space-x-3 mt-1">
+    <div className="flex items-center space-x-2 mt-1">
       <img src={`/images/flag-${entry.location.flag}.svg`} />
-      <span className="text-sm text-gray-700">{entry.location.full}</span>
+      <span className="text-sm text-gray-500 dark:text-gray-400">
+        {entry.location.full}
+      </span>
       {entry.location.remote && (
         <span className="text-xs bg-gray-200 text-gray-500 dark:bg-gray-800 dark:text-gray-400 px-2 py-1 rounded font-medium">
           Remote

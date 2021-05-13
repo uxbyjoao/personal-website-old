@@ -37,7 +37,7 @@ export default function Hero() {
           <HeroLink href="#">GitHub</HeroLink> profiles.
         </p>
       </div>
-      <div className="flex md:hidden space-x-2 mt-8 text-indigo-500">
+      <div className="inline-flex md:hidden space-x-2 mt-8 text-indigo-500">
         <SocialLinks />
       </div>
     </div>
