@@ -3,7 +3,6 @@ import useDarkMode from "../hooks/useDarkMode";
 import DarkModeToggle from "../components/ui/DarkModeToggle";
 
 import "tailwindcss/tailwind.css";
-import styles from "./_app.module.css";
 
 export default function App({ Component, pageProps }) {
   const [darkMode, setDarkMode] = useDarkMode();
@@ -16,7 +15,10 @@ export default function App({ Component, pageProps }) {
   return (
     <div className={containerClassName(darkMode)}>
       <Component {...pageProps} />
-      <DarkModeToggle handleDarkModeToggle={handleDarkModeToggle} />
+      <DarkModeToggle
+        currentMode={darkMode}
+        handleDarkModeToggle={handleDarkModeToggle}
+      />
     </div>
   );
 }
