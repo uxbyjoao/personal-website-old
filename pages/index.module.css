@@ -1,6 +1,10 @@
 .container {
-  @apply gap-4 pb-24;
+  @apply gap-4 pb-24 transition-colors;
   @apply md:grid md:grid-cols-12;
+}
+
+:global(.dark) .container {
+  @apply bg-gray-900;
 }
 
 .sidebar-outer-container {

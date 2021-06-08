@@ -23,7 +23,10 @@
   @apply text-5xl;
   @apply md:text-7xl;
   @apply xl:text-8xl;
-  @apply dark:text-white;
+}
+
+:global(.dark) .heading {
+  @apply text-white;
 }
 
 .subheading {
@@ -35,5 +38,8 @@
   @apply mt-6 transition-colors;
   @apply md:text-lg;
   @apply lg:text-2xl;
-  @apply dark:text-gray-100;
+}
+
+:global(.dark) .links {
+  @apply text-gray-100;
 }

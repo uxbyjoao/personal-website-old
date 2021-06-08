@@ -1,0 +1,7 @@
+.dark-mode-toggle {
+  @apply fixed bottom-6 right-6 p-1 fill-current text-indigo-700;
+}
+
+:global(.dark) .dark-mode-toggle {
+  @apply text-yellow-500;
+}

@@ -5,7 +5,7 @@ module.exports = {
     "./layout/**/*.{js,ts,jsx,tsx}",
     "./helpers/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: "media", // or 'media' or 'class'
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       typography: (theme) => ({

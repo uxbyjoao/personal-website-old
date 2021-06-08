@@ -8,13 +8,19 @@
 
 .proficiency {
   @apply text-gray-900 font-medium;
-  @apply dark:text-white;
+}
+
+:global(.dark) .proficiency {
+  @apply text-white;
 }
 
 .name {
   @apply text-xl font-semibold text-gray-900 transition-colors;
-  @apply dark:text-white;
   @apply xl:text-2xl;
+}
+
+:global(.dark) .name {
+  @apply text-white;
 }
 
 .separator {
