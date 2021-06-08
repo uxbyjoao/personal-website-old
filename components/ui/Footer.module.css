@@ -1,5 +1,8 @@
 .footer {
   @apply text-center text-xs text-gray-400;
-  @apply dark:text-gray-500;
   @apply md:text-left;
+}
+
+:global(.dark) .footer {
+  @apply text-gray-500;
 }

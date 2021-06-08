@@ -1,7 +1,10 @@
 .title {
   @apply mb-1 text-gray-900 font-bold text-4xl;
-  @apply dark:text-gray-50;
   @apply xl:text-5xl;
+}
+
+:global(.dark) .title {
+  @apply text-gray-50;
 }
 
 .flag {
@@ -10,10 +13,16 @@
 
 .year {
   @apply text-sm text-gray-500;
-  @apply dark:text-gray-400;
+}
+
+:global(.dark) .year {
+  @apply text-gray-400;
 }
 
 .institution {
   @apply text-sm font-medium text-gray-600 transition-colors;
-  @apply dark:text-white;
+}
+
+:global(.dark) .institution {
+  @apply text-white;
 }

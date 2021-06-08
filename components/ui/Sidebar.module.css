@@ -1,11 +1,16 @@
 .sidebar-container {
-  @apply bg-gray-50 dark:bg-gray-900 bg-opacity-40 backdrop-filter backdrop-blur;
-  @apply md:bg-transparent md:dark:bg-transparent;
+  @apply bg-gray-50 bg-opacity-40 backdrop-filter backdrop-blur;
+  @apply md:bg-transparent;
 
   @apply border-b border-gray-900 border-opacity-5;
   @apply md:border-0;
 
   @apply transition-colors;
+}
+
+:global(.dark) .sidebar-container {
+  @apply bg-gray-900;
+  @apply bg-transparent;
 }
 
 .profile-picture-container {
@@ -26,10 +31,12 @@
 .navigation-container {
   @apply flex justify-around px-5 py-5 text-sm font-medium tracking-tight;
 
-  @apply dark:text-gray-200;
-
   @apply md:flex-col md:justify-start md:px-0 md:py-0 md:space-y-2 md:space-x-0 md:mt-8 md:text-2xl;
   @apply xl:text-4xl;
+}
+
+:global(.dark) .navigation-container {
+  @apply text-gray-200;
 }
 
 .social-links-container {

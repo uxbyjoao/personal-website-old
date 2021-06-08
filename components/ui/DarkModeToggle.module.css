@@ -1,0 +1,3 @@
+.dark-mode-toggle {
+  @apply fixed bottom-4 right-4 bg-red-600;
+}
