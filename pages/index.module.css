@@ -4,7 +4,7 @@
 }
 
 .sidebar-outer-container {
-  @apply md:col-start-2 md:col-span-3 mt-28;
+  @apply md:col-start-2 md:col-span-3 md:mt-28;
   @apply lg:col-start-3 lg:col-span-3;
 }
 
