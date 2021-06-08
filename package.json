@@ -22,8 +22,8 @@
   "description": "A \"Hello World\" application with multiple pages that shows how Next.js routing works.",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
-    "babel-plugin-inline-react-svg": "^2.0.1",
+    "babel-plugin-inline-react-svg": "^1.1.2",
     "postcss": "^8.2.15",
-    "tailwindcss": "^2.1.2"
+    "tailwindcss": "^2.0.4"
   }
 }
