@@ -1,0 +1,7 @@
+.social-links-icon {
+  @apply w-9 h-9;
+  @apply md:w-6 md:h-6;
+  @apply lg:w-8 lg:h-8;
+  @apply xl:w-9 xl:h-9;
+  @apply hover:text-indigo-400;
+}

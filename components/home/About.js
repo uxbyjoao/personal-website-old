@@ -1,11 +1,13 @@
 import { Element as ScrollElement } from "react-scroll";
 
-import Heading from "../Heading";
-import Prose from "../Prose";
+import styles from "./About.module.css";
+
+import Heading from "../ui/Heading";
+import Prose from "../ui/Prose";
 
 export default function About() {
   return (
-    <ScrollElement name="about" className="pt-24">
+    <ScrollElement name="about" className={styles["container"]}>
       <Heading>About me</Heading>
       <Prose>
         <p>

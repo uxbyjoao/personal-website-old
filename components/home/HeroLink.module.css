@@ -1,0 +1,4 @@
+.link {
+  @apply text-indigo-500 underline transition-colors font-medium;
+  @apply hover:text-indigo-400;
+}

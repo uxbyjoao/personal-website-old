@@ -1,0 +1,25 @@
+.container {
+  @apply flex items-center space-x-2 text-lg;
+}
+
+.heading {
+  @apply flex items-center space-x-2;
+}
+
+.name {
+  @apply font-bold text-gray-900;
+  @apply dark:text-white;
+}
+
+.separator {
+  @apply text-gray-500;
+}
+
+.level {
+  @apply text-gray-500;
+}
+
+.certification-pill {
+  @apply text-xs bg-gray-200 text-gray-500 px-2 py-1 rounded font-medium;
+  @apply dark:bg-gray-800 dark:text-gray-400;
+}

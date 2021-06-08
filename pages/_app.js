@@ -1,8 +1,10 @@
 import "tailwindcss/tailwind.css";
 
+import styles from "./_app.module.css";
+
 export default function App({ Component, pageProps }) {
   return (
-    <div className="dark:bg-gray-900 bg-gray-50 transition-colors">
+    <div className={styles["container"]}>
       <Component {...pageProps} />
     </div>
   );

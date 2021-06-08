@@ -1,0 +1,5 @@
+.button {
+  @apply bg-indigo-500 px-4 py-2 cursor-pointer rounded-xl text-white transition-colors text-lg;
+  @apply hover:bg-indigo-400;
+  @apply lg:px-6 lg:py-4 lg:text-2xl;
+}

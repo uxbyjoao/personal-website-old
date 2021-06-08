@@ -1,0 +1,4 @@
+/* "flex space-x-1" */
+.social-links {
+  @apply flex space-x-1;
+}

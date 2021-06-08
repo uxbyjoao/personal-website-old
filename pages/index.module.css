@@ -1,0 +1,24 @@
+.container {
+  @apply gap-4 pb-24;
+  @apply md:grid md:grid-cols-12;
+}
+
+.sidebar-outer-container {
+  @apply md:col-start-2 md:col-span-3 mt-28;
+  @apply lg:col-start-3 lg:col-span-3;
+}
+
+.sidebar-inner-container {
+  @apply fixed top-0 w-full z-50;
+  @apply md:sticky md:top-12 md:flex md:justify-center;
+}
+
+.content-container {
+  @apply px-5 pt-20;
+  @apply md:px-0 md:pt-0 md:col-start-5 md:col-span-7 md:mt-28;
+  @apply lg:col-start-6 lg:col-span-5;
+}
+
+.footer-container {
+  @apply mt-72;
+}

@@ -1,0 +1,19 @@
+.title {
+  @apply mb-1 text-gray-900 font-bold text-4xl;
+  @apply dark:text-gray-50;
+  @apply xl:text-5xl;
+}
+
+.flag {
+  @apply flex items-center space-x-3;
+}
+
+.year {
+  @apply text-sm text-gray-500;
+  @apply dark:text-gray-400;
+}
+
+.institution {
+  @apply text-sm font-medium text-gray-600 transition-colors;
+  @apply dark:text-white;
+}

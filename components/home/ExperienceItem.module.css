@@ -1,0 +1,40 @@
+.container {
+  @apply text-gray-700 transition-colors;
+  @apply dark:text-white;
+}
+
+.date-type-container {
+  @apply flex items-center space-x-3 text-sm text-gray-400 italic;
+}
+
+.title-organization-container {
+  @apply mb-3;
+}
+
+.location-container {
+  @apply flex items-center space-x-2 mt-1;
+}
+
+.description-container {
+  @apply mt-3;
+}
+
+.title {
+  @apply text-4xl mb-1 font-bold text-gray-900;
+  @apply dark:text-white;
+}
+
+.organization {
+  @apply text-xl text-gray-400;
+  @apply dark:text-gray-300;
+}
+
+.location {
+  @apply text-sm text-gray-500;
+  @apply dark:text-gray-400;
+}
+
+.remote-pill {
+  @apply text-xs bg-gray-200 text-gray-500 px-2 py-1 rounded font-medium;
+  @apply dark:bg-gray-800 dark:text-gray-400;
+}

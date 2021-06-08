@@ -1,0 +1,7 @@
+.container {
+  @apply pt-24;
+}
+
+.list-container {
+  @apply grid grid-flow-row gap-14;
+}

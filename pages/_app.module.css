@@ -1,0 +1,4 @@
+.container {
+  @apply bg-gray-50 transition-colors;
+  @apply dark:bg-gray-900;
+}

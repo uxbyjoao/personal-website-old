@@ -1,6 +1,7 @@
 import Head from "next/head";
 
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/ui/Sidebar";
+import Footer from "../components/ui/Footer";
 
 import Hero from "../components/home/Hero";
 // import Projects from "../components/home/Projects";
@@ -8,7 +9,8 @@ import Skills from "../components/home/Skills";
 import Education from "../components/home/Education";
 import Experience from "../components/home/Experience";
 import About from "../components/home/About";
-import Footer from "../components/Footer";
+
+import styles from "./index.module.css";
 
 export default function IndexPage() {
   return (
@@ -66,13 +68,13 @@ export default function IndexPage() {
         />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
-      <div className="md:grid md:grid-cols-12 gap-4 pb-24">
-        <div className="md:col-start-2 md:col-span-3 lg:col-start-3 lg:col-span-3 md:mt-28">
-          <div className="fixed top-0 w-full md:sticky md:top-12 md:flex md:justify-center z-50">
+      <div className={styles["container"]}>
+        <div className={styles["sidebar-outer-container"]}>
+          <div className={styles["sidebar-inner-container"]}>
             <Sidebar />
           </div>
         </div>
-        <div className="px-5 pt-20 md:px-0 md:pt-0 md:col-start-5 md:col-span-7 lg:col-start-6 lg:col-span-5 md:mt-28">
+        <div className={styles["content-container"]}>
           <Hero />
           <div>
             {/* <Projects /> */}
@@ -81,7 +83,7 @@ export default function IndexPage() {
             <Experience />
             <About />
           </div>
-          <div className="mt-72">
+          <div className={styles["footer-container"]}>
             <Footer />
           </div>
         </div>

@@ -1,48 +1,33 @@
 import Image from "next/image";
 
-import SocialLinks from "../SocialLinks";
+import SocialLinks from "../ui/SocialLinks";
+import HeroLink from "./HeroLink";
 
-function HeroLink({ href, alt, children }) {
-  return (
-    <a
-      href={href}
-      alt={alt}
-      className="text-indigo-500 underline hover:text-indigo-400 transition-colors font-medium"
-    >
-      {children}
-    </a>
-  );
-}
+import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <div className="text-center md:text-left">
+    <div className={styles["container"]}>
       <div>
-        <div className="m-auto md:hidden relative w-44 h-44 sm:w-60 sm:h-60 mb-8">
+        <div className={styles["profile-pic-container"]}>
           <Image
             src="/images/profile.jpg"
             alt="João's profile picture"
-            className="rounded-xl filter grayscale"
+            className={styles["profile-pic"]}
             layout="fill"
           />
         </div>
-        <h1 className="text-5xl md:text-7xl xl:text-8xl dark:text-white font-extrabold tracking-tight transition-colors text-gray-900">
-          Hello world, my name is João.
-        </h1>
-        <h2 className="text-3xl xl:text-4xl mt-3 text-gray-400 tracking-tight transition-colors">
-          I'm a Usability Engineer.
-        </h2>
+        <h1 className={styles["heading"]}>Hello world, my name is João.</h1>
+        <h2 className={styles["subheading"]}>I'm a Usability Engineer.</h2>
       </div>
-      <div className="mt-6">
-        <p className="md:text-lg lg:text-2xl dark:text-gray-100 transition-colors">
-          You can check out some samples of my work on my{" "}
-          <HeroLink href="https://www.behance.net/uxbyjoao">Behance</HeroLink>,{" "}
-          <HeroLink href="https://www.dribbble.com/uxbyjoao">Dribbble</HeroLink>
-          , and <HeroLink href="https://github.com/uxbyjoao">GitHub</HeroLink>{" "}
-          profiles.
-        </p>
-      </div>
-      <div className="inline-flex md:hidden space-x-2 mt-8 text-indigo-500">
+      <p className={styles["links"]}>
+        You can check out some samples of my work on my{" "}
+        <HeroLink href="https://www.behance.net/uxbyjoao">Behance</HeroLink>,{" "}
+        <HeroLink href="https://www.dribbble.com/uxbyjoao">Dribbble</HeroLink>,
+        and <HeroLink href="https://github.com/uxbyjoao">GitHub</HeroLink>{" "}
+        profiles.
+      </p>
+      <div className={styles["social-links-container"]}>
         <SocialLinks />
       </div>
     </div>
