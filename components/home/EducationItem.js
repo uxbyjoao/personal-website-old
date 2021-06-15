@@ -1,3 +1,5 @@
+import { Image } from "next/image";
+
 import styles from "./EducationItem.module.css";
 
 export default function EducationItem({ entry }) {
@@ -5,6 +7,7 @@ export default function EducationItem({ entry }) {
     <div>
       <h4 className={styles["title"]}>{entry.title}</h4>
       <div className={styles["flag"]}>
+        {/* eslint-disable-next-line */}
         <img
           src={`/images/flag-${entry.flag}.svg`}
           alt={`${entry.flag} flag`}

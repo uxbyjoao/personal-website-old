@@ -1,4 +1,4 @@
-export default [
+const experienceList = [
   {
     title: "UX/UI Designer",
     organization: "NE2 Group",
@@ -96,3 +96,5 @@ export default [
       "During my internship, I was able to hone my skills with Adobe's suite of applications, as well as creative skills in general. I had the opportunity of designing print ads for magazines and newspapers, as well as branding for myriad clients in Fortaleza.",
   },
 ];
+
+export default experienceList;

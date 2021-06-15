@@ -4,17 +4,19 @@ import SidebarLink from "./SidebarLink";
 import SocialLinks from "./SocialLinks";
 
 import styles from "./Sidebar.module.css";
+import profilePic from "../../public/images/profile.jpg";
 
 export default function Sidebar() {
   return (
     <aside className={styles["sidebar-container"]}>
       <div className={styles["profile-picture-container"]}>
         <Image
-          src="/images/profile.jpg"
+          src={profilePic}
           alt="João's profile picture"
           className={styles["profile-picture-image"]}
           layout="fill"
           objectFit="cover"
+          placeholder="blur"
         />
       </div>
       <nav className={styles["navigation-container"]}>

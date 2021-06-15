@@ -3,6 +3,10 @@
   @apply md:text-left;
 }
 
+.footer a {
+  @apply text-gray-400 underline hover:text-indigo-500 transition-colors;
+}
+
 :global(.dark) .footer {
   @apply text-gray-500;
 }

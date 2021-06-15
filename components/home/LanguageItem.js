@@ -3,6 +3,7 @@ import styles from "./LanguageItem.module.css";
 export default function LanguageItem({ entry }) {
   return (
     <div className={styles["container"]}>
+      {/* eslint-disable-next-line */}
       <img src={`/images/flag-${entry.flag}.svg`} />
       <h4 className={styles["heading"]}>
         <span className={styles["name"]}>{entry.name}</span>

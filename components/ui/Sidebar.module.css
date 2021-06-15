@@ -24,8 +24,7 @@
 }
 
 .profile-picture-image {
-  @apply rounded-xl filter grayscale transition-all;
-  @apply hover:grayscale-0;
+  @apply rounded-xl;
 }
 
 .navigation-container {

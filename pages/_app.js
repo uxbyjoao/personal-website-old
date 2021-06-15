@@ -9,7 +9,7 @@ export default function App({ Component, pageProps }) {
 
   const containerClassName = (mode) => (mode === "dark" ? darkMode : "");
 
-  const handleDarkModeToggle = (event) =>
+  const handleDarkModeToggle = () =>
     darkMode === "dark" ? setDarkMode(null) : setDarkMode("dark");
 
   return (

@@ -6,6 +6,7 @@ export default function SkillItem({ entry }) {
   return (
     <div>
       <div className={styles["name-icon-container"]}>
+        {/* eslint-disable-next-line */}
         <img
           src={`/images/skill-${entry.icon}.svg`}
           alt={`${entry.name}'s logo`}

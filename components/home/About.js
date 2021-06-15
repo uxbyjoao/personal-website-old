@@ -26,11 +26,11 @@ export default function About() {
           Germany.
         </p>
         <p>
-          Currently, I'm working remotely for a company in Canada called{" "}
-          <strong>NE2 Group</strong>, where I'm responsible for creating and
-          maintaining their design system, as well as designing and redesigning
-          their digital products. I also do a little bit of graphic design work
-          for them as well, but it's very minor.
+          Currently, I&apos;m working remotely for a company in Canada called{" "}
+          <strong>NE2 Group</strong>, where I&apos;m responsible for creating
+          and maintaining their design system, as well as designing and
+          redesigning their digital products. I also do a little bit of graphic
+          design work for them as well, but it&apos;s very minor.
         </p>
         <p>
           In my spare time, I like to sing, record and play music (fun fact: I

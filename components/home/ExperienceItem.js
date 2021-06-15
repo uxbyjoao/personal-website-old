@@ -17,7 +17,11 @@ export default function ExperienceItem({ entry }) {
         <h5 className={styles["organization"]}>{entry.organization}</h5>
       </div>
       <div className={styles["location-container"]}>
-        <img src={`/images/flag-${entry.location.flag}.svg`} />
+        {/* eslint-disable-next-line */}
+        <img
+          src={`/images/flag-${entry.location.flag}.svg`}
+          alt={entry.location.full}
+        />
         <span className={styles["location"]}>{entry.location.full}</span>
         {entry.location.remote && (
           <span className={styles["remote-pill"]}>Remote</span>
