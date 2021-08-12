@@ -10,7 +10,7 @@ import experienceList from "../../data/experience";
 export default function Experience() {
   return (
     <ScrollElement name="experience" className={styles["container"]}>
-      <Heading>Past Work Experience</Heading>
+      <Heading>Work Experience</Heading>
       <div className={styles["list-container"]}>
         {experienceList.map((entry, key) => (
           <ExperienceItem entry={entry} key={key} />
