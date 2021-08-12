@@ -8,7 +8,7 @@
 }
 
 .flag {
-  @apply flex items-center space-x-3;
+  @apply flex items-center space-x-3 mt-3;
 }
 
 .year {
