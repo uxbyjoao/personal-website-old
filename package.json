@@ -8,7 +8,7 @@
     "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.6.22",
+    "@mdx-js/loader": "^0.15.4",
     "@next/mdx": "^11.1.0",
     "@tailwindcss/typography": "0.4.1",
     "next": "^11.1.2",
