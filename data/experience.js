@@ -1,5 +1,35 @@
 const experienceList = [
   {
+    title: "UI Designer",
+    organization: "Contentful",
+    type: "Full Time",
+    location: {
+      full: "Berlin, Germany",
+      remote: false,
+      flag: "germany",
+    },
+    date: {
+      start: "2021",
+      end: "2021",
+    },
+  },
+  {
+    title: "UX/UI Designer",
+    organization: "Aklamio GmbH",
+    type: "Full Time",
+    location: {
+      full: "Berlin, Germany",
+      remote: false,
+      flag: "germany",
+    },
+    date: {
+      start: "2021",
+      end: "2021",
+    },
+    description:
+      "In my brief stay at Aklamio, I contributed with foundational UX research by assisting in fully mapping out their platform, including competitor and heuristical analysis. I also helped establish the foundations of their design system, which was starting to be developed.",
+  },
+  {
     title: "UX/UI Designer",
     organization: "NE2 Group",
     type: "Contract",
@@ -10,10 +40,10 @@ const experienceList = [
     },
     date: {
       start: "2019",
-      end: "Present",
+      end: "2021",
     },
     description:
-      "At NE2, I'm tasked with designing software applications for brokering energy products, both for the web and mobile platforms. I am also responsible for the creation and maintenance of their design system. This means making sure that the NE2 brand is consistent across every touchpoint, from legal documents to software experiences.",
+      "At NE2, I was tasked with designing software applications for brokering energy products, both for the web and mobile platforms. I was also responsible for the creation and maintenance of their design system. This meant making sure that the NE2 brand was consistent across every touchpoint, from legal documents to software experiences.",
   },
   {
     title: "UX/UI Designer, Graphic Designer, Web Developer",
