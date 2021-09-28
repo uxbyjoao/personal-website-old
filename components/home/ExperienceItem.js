@@ -27,9 +27,11 @@ export default function ExperienceItem({ entry }) {
           <span className={styles["remote-pill"]}>Remote</span>
         )}
       </div>
-      <div className={styles["description-container"]}>
-        <Prose>{entry.description}</Prose>
-      </div>
+      {entry.description && (
+        <div className={styles["description-container"]}>
+          <Prose>{entry.description}</Prose>
+        </div>
+      )}
     </div>
   );
 }

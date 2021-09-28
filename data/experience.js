@@ -1,5 +1,35 @@
 const experienceList = [
   {
+    title: "UI Designer",
+    organization: "Contentful",
+    type: "Full Time",
+    location: {
+      full: "Berlin, Germany",
+      remote: false,
+      flag: "germany",
+    },
+    date: {
+      start: "2021",
+      end: "2021",
+    },
+  },
+  {
+    title: "UX/UI Designer",
+    organization: "Aklamio GmbH",
+    type: "Full Time",
+    location: {
+      full: "Berlin, Germany",
+      remote: false,
+      flag: "germany",
+    },
+    date: {
+      start: "2021",
+      end: "2021",
+    },
+    description:
+      "In my brief stay at Aklamio, I contributed with foundational UX research by assisting in fully mapping out their platform, including competitor and heuristical analysis. I also helped establish the foundations of their design system, which was starting to be developed.",
+  },
+  {
     title: "UX/UI Designer",
     organization: "Aklamio GmbH",
     type: "Full Time",
