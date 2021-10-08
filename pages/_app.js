@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import useDarkMode from "../hooks/useDarkMode";
 
 import DarkModeToggle from "../components/ui/DarkModeToggle";
@@ -13,12 +15,17 @@ export default function App({ Component, pageProps }) {
     darkMode === "dark" ? setDarkMode(null) : setDarkMode("dark");
 
   return (
-    <div className={containerClassName(darkMode)}>
-      <Component {...pageProps} />
-      <DarkModeToggle
-        currentMode={darkMode}
-        handleDarkModeToggle={handleDarkModeToggle}
-      />
-    </div>
+    <>
+      <Head>
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
+      </Head>
+      <div className={containerClassName(darkMode)}>
+        <Component {...pageProps} />
+        <DarkModeToggle
+          currentMode={darkMode}
+          handleDarkModeToggle={handleDarkModeToggle}
+        />
+      </div>
+    </>
   );
 }
