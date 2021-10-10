@@ -1,4 +1,4 @@
-import Head from "next/head";
+import Script from "next/script";
 
 import useDarkMode from "../hooks/useDarkMode";
 
@@ -16,9 +16,7 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Head>
-        <script async src="https://cdn.splitbee.io/sb.js"></script>
-      </Head>
+      <Script src="https://cdn.splitbee.io/sb.js" />
       <div className={containerClassName(darkMode)}>
         <Component {...pageProps} />
         <DarkModeToggle
