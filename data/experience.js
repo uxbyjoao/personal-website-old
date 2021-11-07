@@ -12,6 +12,8 @@ const experienceList = [
       start: "2021",
       end: "2021",
     },
+    description:
+      "Contentful is the world-leading provider of headless content management systems as a service, trusted by demanding global organizations such as Nike, Microsoft, Ikea, Snap Inc., Nintendo, Chanel, Zalando, Bang & Olufsen, among many others. As a part of the Marketing Website team, I'm responsible for creating engaging user interfaces that millions of users accessing Contentful's website experience every day.",
   },
   {
     title: "UX/UI Designer",
@@ -28,22 +30,6 @@ const experienceList = [
     },
     description:
       "In my brief stay at Aklamio, I contributed with foundational UX research by assisting in fully mapping out their platform, including competitor and heuristical analysis. I also helped establish the foundations of their design system, which was starting to be developed.",
-  },
-  {
-    title: "UX/UI Designer",
-    organization: "Aklamio GmbH",
-    type: "Full Time",
-    location: {
-      full: "Berlin, Germany",
-      remote: false,
-      flag: "germany",
-    },
-    date: {
-      start: "2021",
-      end: "Present",
-    },
-    description:
-      "In my current position at Aklamio, I am assisting the design and product team in mapping the application's entire user experience, as well as building their design system.",
   },
   {
     title: "UX/UI Designer",
@@ -78,7 +64,7 @@ const experienceList = [
       "During this time, I mainly focused on finishing my degree, studying web development and preparing for coming to Germany. As a freelancer, I had the opportunity of working for some amazing clients such as the Dragão do Mar Cultural Center in Fortaleza, Arte Produções, the Mapar Group, and iClub, designing and developing websites, applications and print media.",
   },
   {
-    title: "Web & Graphic Designer",
+    title: "Senior Web & Graphic Designer",
     organization: "Convertte Web Intelligence",
     type: "Full-Time",
     location: {
@@ -126,7 +112,7 @@ const experienceList = [
       "This was a 3-month contract I signed with Paz for creating for Patrícia Saboya's campaign for mayor of Fortaleza, Brazil. I was responsible for myriad designs ranging from print to TV ads, as well as a hotsite designed and developed by me using WordPress. This was my first ever professional foray into web design.",
   },
   {
-    title: "Art Director",
+    title: "Art Direction Intern",
     organization: "Ágil Publicidade",
     type: "Internship",
     location: {
