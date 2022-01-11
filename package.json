@@ -27,7 +27,7 @@
     "babel-plugin-inline-react-svg": "^2.0.1",
     "eslint": "^7.28.0",
     "eslint-config-next": "^11.0.0",
-    "postcss": "^8.2.15",
+    "postcss": "^8.4.5",
     "tailwindcss": "^2.2.19"
   }
 }
