@@ -9,8 +9,6 @@ This is my own personal website, created using **TailwindCSS** and **Next.js**.
 
 ## Getting started
 
----
-
 1. Install dependencies:
 
 ```
