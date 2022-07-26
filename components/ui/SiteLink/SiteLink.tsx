@@ -10,7 +10,7 @@ type Props = {
 
 export default function SiteLink({ href, trackingEvent, children }: Props) {
   const handleClick = (ev: React.SyntheticEvent) => {
-    ev.preventDefault();
+    // ev.preventDefault();
     splitbee.track(trackingEvent);
   };
   return (
