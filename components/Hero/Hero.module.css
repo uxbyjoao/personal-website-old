@@ -1,5 +1,5 @@
 .container h1 {
-  @apply font-medium font-medium tracking-tighter leading-[84px] mb-2;
+  @apply font-medium tracking-tighter leading-[84px] mb-2;
   @apply text-6xl;
 }
 

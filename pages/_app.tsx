@@ -1,4 +1,6 @@
 import DarkModeToggle from "@/components/ui/DarkModeToggle/DarkModeToggle";
+import SeoConfig from "@/data/seo-config";
+import { DefaultSeo } from "next-seo";
 import { AppProps } from "next/app";
 import { useEffect } from "react";
 import { useDarkMode } from "usehooks-ts";
@@ -19,6 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <DefaultSeo {...SeoConfig} />
       <div className="main-container">
         <div className="content">
           <Component {...pageProps} />
