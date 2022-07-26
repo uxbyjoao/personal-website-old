@@ -1,5 +1,5 @@
+import SiteLink from "@/components/ui/SiteLink/SiteLink";
 import clsx from "clsx";
-import Link from "next/link";
 
 import styles from "./Hero.module.css";
 
@@ -15,13 +15,27 @@ export default function Hero() {
         <p>
           Currently, I&apos;m working as a Senior UX Designer for UK-based
           diamonds e-commerce platform{" "}
-          <Link href="https://www.nivoda.net/">Nivoda</Link>, where I&apos;m
-          designing digital products and developing design systems. Check out my{" "}
-          <Link href="https://www.behance.net/uxbyjoao">Behance profile</Link>{" "}
+          <SiteLink
+            trackingEvent="Click on Current Job"
+            href="https://www.nivoda.net/"
+          >
+            Nivoda
+          </SiteLink>
+          , where I&apos;m designing digital products and developing design
+          systems. Check out my{" "}
+          <SiteLink
+            trackingEvent="Click on Behance"
+            href="https://www.behance.net/uxbyjoao"
+          >
+            Behance profile
+          </SiteLink>{" "}
           for some samples of my work. My CV is available on my{" "}
-          <Link href="https://www.linkedin.com/in/jlfgms/">
+          <SiteLink
+            trackingEvent="Click on LinkedIn"
+            href="https://www.linkedin.com/in/jlfgms/"
+          >
             LinkedIn profile
-          </Link>
+          </SiteLink>
           .
         </p>
       </div>

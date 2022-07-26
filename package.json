@@ -8,6 +8,7 @@
     "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
+    "@splitbee/web": "^0.3.0",
     "clsx": "^1.2.1",
     "next": "^12.1.4",
     "next-seo": "^5.5.0",
