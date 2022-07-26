@@ -23,6 +23,10 @@
     @apply text-neutral-800;
     @apply dark:text-neutral-200;
   }
+
+  h2 {
+    @apply opacity-50;
+  }
 }
 
 @layer components {

@@ -13,9 +13,10 @@ export default function Hero() {
       </h2>
       <div className={styles["copy"]}>
         <p>
-          Currently, I&apos;m working on digital products and developing design
-          systems for diamonds e-commerce platform{" "}
-          <Link href="https://www.nivoda.net/">Nivoda</Link>. Check out my{" "}
+          Currently, I&apos;m working as a Senior UX Designer for UK-based
+          diamonds e-commerce platform{" "}
+          <Link href="https://www.nivoda.net/">Nivoda</Link>, where I&apos;m
+          designing digital products and developing design systems. Check out my{" "}
           <Link href="https://www.behance.net/uxbyjoao">Behance profile</Link>{" "}
           for some samples of my work. My CV is available on my{" "}
           <Link href="https://www.linkedin.com/in/jlfgms/">
