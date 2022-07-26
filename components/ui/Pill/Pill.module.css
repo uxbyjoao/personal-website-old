@@ -1,0 +1,7 @@
+.pill {
+  @apply bg-sky-100 px-2 py-2 rounded-md text-sky-600 font-medium text-sm transition-all;
+}
+
+:global(.dark) .pill {
+  @apply bg-sky-100/5 text-sky-400;
+}

@@ -1,15 +1,18 @@
 {
-    "presets": ["next/babel"],
-    "plugins": [
-        ["inline-react-svg", {
-            "svgo": {
-                "plugins": [
-                    {
-                        "name": "cleanupIDs",
-                        "active": false
-                    }
-                ]
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "inline-react-svg",
+      {
+        "svgo": {
+          "plugins": [
+            {
+              "name": "cleanupIDs",
+              "active": false
             }
-        }]
+          ]
+        }
+      }
     ]
+  ]
 }

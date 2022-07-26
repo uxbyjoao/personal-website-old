@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Light mode background */
+  html {
+    @apply bg-neutral-50 transition-all;
+  }
+
+  /* Dark mode background */
+  html.dark {
+    @apply bg-neutral-900;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading transition-all;
+    @apply text-neutral-800;
+    @apply dark:text-neutral-200;
+  }
+}
+
+@layer components {
+  .main-container {
+    @apply flex justify-center items-center w-full h-[100vh];
+  }
+
+  .content {
+    @apply max-w-[700px] px-4;
+  }
+}

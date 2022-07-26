@@ -1,7 +1,0 @@
-.sidebar-link {
-  @apply font-bold transition-colors cursor-pointer hover:text-indigo-500;
-}
-
-.sidebar-link-active {
-  @apply text-indigo-500;
-}

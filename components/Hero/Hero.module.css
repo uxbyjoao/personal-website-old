@@ -1,0 +1,21 @@
+.container h1 {
+  @apply font-medium font-medium tracking-tighter leading-[84px] mb-2;
+  @apply text-6xl;
+}
+
+.container h2 {
+  @apply tracking-tight;
+  @apply text-2xl;
+  @apply text-2xl;
+  @apply md:text-3xl;
+}
+
+.copy {
+  @apply prose prose-neutral prose-a:decoration-sky-500 prose-a:decoration-2 prose-a:underline-offset-4;
+
+  @apply md:prose-xl;
+}
+
+:global(.dark) .prose {
+  @apply prose-invert;
+}
