@@ -10,7 +10,7 @@
   "dependencies": {
     "@splitbee/web": "^0.3.0",
     "clsx": "^1.2.1",
-    "next": "^12.2.5",
+    "next": "^12.3.0",
     "next-seo": "^5.5.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -30,7 +30,7 @@
     "autoprefixer": "^10.4.8",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "eslint": "^7.32.0",
-    "eslint-config-next": "^12.2.5",
+    "eslint-config-next": "^12.3.0",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.1.8"
   }
