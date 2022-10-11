@@ -25,7 +25,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.4",
     "@trivago/prettier-plugin-sort-imports": "^3.3.0",
-    "@types/node": "^18.7.2",
+    "@types/node": "^18.8.4",
     "@types/react": "18.0.1",
     "autoprefixer": "^10.4.8",
     "babel-plugin-inline-react-svg": "^2.0.1",
